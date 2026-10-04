@@ -62,3 +62,63 @@ const certificates = [
         pdf: "certificates/9a8af1f5-58e3-4807-a678-93172afeaeb1.pdf"
     }
 ];
+// =================================
+// GENERATE CERTIFICATE CARDS
+// =================================
+
+const certificationsGrid =
+    document.getElementById("certifications-grid");
+
+
+// Sort certificates by date — newest first
+certificates.sort((a, b) => {
+    return new Date(b.date) - new Date(a.date);
+});
+
+
+// Create certificate cards
+certificates.forEach((certificate, index) => {
+
+    const card = document.createElement("article");
+
+    card.className = "certificate-card";
+
+    card.innerHTML = `
+
+        <div class="certificate-number">
+            ${String(index + 1).padStart(2, "0")}
+        </div>
+
+        <img
+            src="${certificate.image}"
+            alt="${certificate.title} certificate - Kushal Kasera"
+            class="certificate-preview"
+        >
+
+        <h3>
+            ${certificate.title}
+        </h3>
+
+        <p class="certificate-issuer">
+            ${certificate.issuer}
+        </p>
+
+        <p class="certificate-date">
+            ${certificate.displayDate}
+        </p>
+
+        <a
+            href="${certificate.pdf}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="certificate-button">
+
+            View Certificate →
+
+        </a>
+
+    `;
+
+    certificationsGrid.appendChild(card);
+
+});
