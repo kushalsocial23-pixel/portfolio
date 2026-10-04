@@ -82,12 +82,6 @@ certificates.forEach((certificate, index) => {
             ${String(index + 1).padStart(2, "0")}
         </div>
 
-        <img
-            src="${certificate.image}"
-            alt="${certificate.title} certificate - Kushal Kasera"
-            class="certificate-preview"
-        >
-
         <h3>
             ${certificate.title}
         </h3>
