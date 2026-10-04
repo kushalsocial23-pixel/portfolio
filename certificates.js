@@ -1,0 +1,64 @@
+const certificates = [
+    {
+        title: "AI and Cybersecurity Awareness",
+        issuer: "TCS iON — Tata Consultancy Services",
+        date: "2026-10-04",
+        displayDate: "October 2026",
+        image: "certificate-images/07-AI-and-Cybersecurity-Awareness.jpg",
+        pdf: "certificates/AI-and-Cybersecurity-Awareness-TCS-iON-Kushal-Kasera.pdf"
+    },
+
+    {
+        title: "Introduction to Generative AI",
+        issuer: "GiveMyCertificate",
+        date: "2026-10-01",
+        displayDate: "October 2026",
+        image: "certificate-images/01-Introduction-to-Generative-AI.jpg",
+        pdf: "certificates/10821919_11185046_1790880098755.pdf"
+    },
+
+    {
+        title: "Presentation Skills",
+        issuer: "TCS iON — Tata Consultancy Services",
+        date: "2026-10-02",
+        displayDate: "October 2026",
+        image: "certificate-images/02-Presentation-Skills-TCS-iON.jpg",
+        pdf: "certificates/Kushal_Kasera_5824001.pdf"
+    },
+
+    {
+        title: "HackX: Data x Cyber",
+        issuer: "CMP Hack Squad × Google Developer Group Prayagraj",
+        date: "2026-08-22",
+        displayDate: "August 2026",
+        image: "certificate-images/03-HackX-Data-x-Cyber.jpg",
+        pdf: "certificates/Certificate - Kushal Kasera.pdf"
+    },
+
+    {
+        title: "HackDiwas 3.0",
+        issuer: "United University × WikiClub Tech × IEEE",
+        date: "2026-04-24",
+        displayDate: "April 2026",
+        image: "certificate-images/04-HackDiwas-3.0.jpg",
+        pdf: "certificates/KUSHAL KASERA - TECHCREW.pdf"
+    },
+
+    {
+        title: "Web Developer Internship",
+        issuer: "Codec Technologies Pvt. Ltd.",
+        date: "2025-11-05",
+        displayDate: "August – November 2025",
+        image: "certificate-images/06-Web-Developer-Internship.jpg",
+        pdf: "certificates/Web-Developer-Internship-Kushal-Kasera.pdf"
+    },
+
+    {
+        title: "AI/ML Workshop",
+        issuer: "Code Virus Security × Digital Yodha Foundation",
+        date: "2025-05-11",
+        displayDate: "May 2025",
+        image: "certificate-images/05-AI-ML-Workshop.jpg",
+        pdf: "certificates/9a8af1f5-58e3-4807-a678-93172afeaeb1.pdf"
+    }
+];
