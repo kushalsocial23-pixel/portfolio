@@ -562,7 +562,39 @@
         </div>
 
     </footer>
+<!-- ================= CERTIFICATE MODAL ================= -->
 
+<div id="certificate-modal" class="certificate-modal">
+
+    <div class="certificate-modal-content">
+
+        <button
+            id="certificate-close"
+            class="certificate-close"
+            aria-label="Close certificate">
+            ×
+        </button>
+
+        <div class="certificate-modal-header">
+            <h3 id="certificate-modal-title">
+                Certificate
+            </h3>
+
+            <p id="certificate-modal-issuer"></p>
+        </div>
+
+        <div class="certificate-viewer">
+
+            <iframe
+                id="certificate-frame"
+                title="Certificate Preview">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</div>
 <script src="certificates.js"></script>
 </body>
 </html>
