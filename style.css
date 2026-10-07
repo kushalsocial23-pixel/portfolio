@@ -448,103 +448,707 @@ a {
 
 /* ========================================
    HERO
-======================================== */
+   ======================================== */
 
 .hero {
-    min-height: 90vh;
+
+    position: relative;
+
+    min-height: 100vh;
 
     display: flex;
+
     align-items: center;
 
-    border-bottom: 1px solid #202637;
+    overflow: hidden;
+
+    padding:
+        120px 0
+        80px;
+
+    border-bottom:
+        1px solid #202637;
+
 }
+
+
+/* ========================================
+   HERO BACKGROUND
+   ======================================== */
+
+.hero-grid {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    opacity: 0.28;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.035) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        55px 55px;
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black,
+            transparent 85%
+        );
+
+}
+
+
+.hero-glow {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    pointer-events: none;
+
+}
+
+
+.hero-glow-one {
+
+    width: 420px;
+    height: 420px;
+
+    top: 5%;
+    right: 8%;
+
+    background:
+        rgba(99, 102, 241, 0.12);
+
+}
+
+
+.hero-glow-two {
+
+    width: 300px;
+    height: 300px;
+
+    bottom: 5%;
+    left: 10%;
+
+    background:
+        rgba(56, 189, 248, 0.07);
+
+}
+
+
+/* ========================================
+   HERO CONTENT
+   ======================================== */
 
 .hero-content {
-    display: flex;
-    justify-content: space-between;
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(320px, 0.8fr);
+
     align-items: center;
 
-    gap: 60px;
+    gap: 80px;
+
 }
+
+
+/* ========================================
+   HERO TEXT
+   ======================================== */
 
 .hero-text {
-    max-width: 700px;
+
+    max-width: 720px;
+
 }
+
+
+/* ========================================
+   STATUS
+   ======================================== */
+
+.hero-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 24px;
+
+    padding:
+        7px 12px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.10);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,0.04);
+
+    color: #aeb7c7;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.status-dot {
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #6ee7b7;
+
+    box-shadow:
+        0 0 12px
+        rgba(110,231,183,0.7);
+
+}
+
+
+/* ========================================
+   GREETING
+   ======================================== */
 
 .small-heading {
-    color: #9ca3af;
 
-    font-size: 14px;
-    font-weight: bold;
+    margin-bottom: 8px;
 
-    letter-spacing: 3px;
+    color: #8f99aa;
 
-    margin-bottom: 15px;
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
 }
+
+
+/* ========================================
+   HERO NAME
+   ======================================== */
 
 .hero h1 {
-    font-size: clamp(48px, 8vw, 90px);
 
-    line-height: 1;
+    margin-bottom: 18px;
 
-    margin-bottom: 20px;
+    font-size:
+        clamp(58px, 8vw, 105px);
+
+    line-height: 0.95;
+
+    letter-spacing: -5px;
+
+    font-weight: 800;
+
 }
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #aeb7c7;
+
+}
+
+
+/* ========================================
+   HERO SUBTITLE
+   ======================================== */
 
 .hero h2 {
-    color: #cbd5e1;
 
-    font-size: clamp(20px, 3vw, 30px);
+    display: flex;
 
-    font-weight: normal;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 10px;
 
     margin-bottom: 25px;
+
+    color: #f5f7fa;
+
+    font-size:
+        clamp(19px, 2.5vw, 27px);
+
+    font-weight: 500;
+
+    letter-spacing: -0.5px;
+
 }
+
+
+.hero h2 span {
+
+    color: #65718a;
+
+}
+
+
+/* ========================================
+   HERO DESCRIPTION
+   ======================================== */
 
 .hero-description {
-    max-width: 650px;
 
-    color: #9ca3af;
+    max-width: 620px;
+
+    margin-bottom: 30px;
+
+    color: #929cad;
 
     font-size: 17px;
+
+    line-height: 1.8;
+
 }
+
+
+/* ========================================
+   HERO BUTTONS
+   ======================================== */
 
 .hero-buttons {
-    display: flex;
-    gap: 15px;
 
-    margin-top: 35px;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 10px;
+
 }
 
-.btn {
-    display: inline-block;
 
-    padding: 13px 22px;
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 48px;
+
+    padding:
+        0 19px;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+
+}
+
+
+.btn span {
+
+    font-size: 16px;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+.btn:hover span {
+
+    transform:
+        translate(2px, -2px);
+
+}
+
+
+.primary-btn {
+
+    background: #ffffff;
+
+    color: #0b0f19;
+
+}
+
+
+.primary-btn:hover {
+
+    transform:
+        translateY(-3px);
+
+    background: #e7eaf0;
+
+}
+
+
+.secondary-btn {
+
+    border:
+        1px solid
+        #354055;
+
+    background:
+        rgba(255,255,255,0.025);
+
+    color: #ffffff;
+
+}
+
+
+.secondary-btn:hover {
+
+    transform:
+        translateY(-3px);
+
+    border-color:
+        #647089;
+
+    background:
+        rgba(255,255,255,0.07);
+
+}
+
+
+/* ========================================
+   HERO META
+   ======================================== */
+
+.hero-meta {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 35px;
+
+    margin-top: 42px;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.08);
+
+}
+
+
+.hero-meta div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+}
+
+
+.hero-meta strong {
+
+    color: #e5e7eb;
+
+    font-size: 14px;
+
+}
+
+
+.hero-meta span {
+
+    color: #697386;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* ========================================
+   HERO VISUAL
+   ======================================== */
+
+.hero-visual {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.hero-image-wrapper {
+
+    position: relative;
+
+    width: 330px;
+    height: 390px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* IMAGE */
+
+.profile-photo {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 290px;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 150px 150px 28px 28px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.18);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,0.45);
+
+}
+
+
+/* IMAGE RING */
+
+.image-ring {
+
+    position: absolute;
+
+    width: 315px;
+    height: 375px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.10);
+
+    border-radius:
+        160px 160px 35px 35px;
+
+    transform:
+        rotate(5deg);
+
+}
+
+
+/* ========================================
+   FLOATING CARDS
+   ======================================== */
+
+.floating-card {
+
+    position: absolute;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding:
+        11px 14px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.12);
+
+    border-radius: 12px;
+
+    background:
+        rgba(15,20,32,0.82);
+
+    backdrop-filter:
+        blur(12px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,0.25);
+
+}
+
+
+.floating-card strong {
+
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+}
+
+
+.floating-card small {
+
+    display: block;
+
+    margin-top: 2px;
+
+    color: #7f899c;
+
+    font-size: 10px;
+
+}
+
+
+.floating-icon {
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
 
     border-radius: 8px;
 
-    font-weight: bold;
+    background:
+        rgba(255,255,255,0.08);
 
-    transition: 0.3s;
+    color: #ffffff;
+
 }
 
-.primary-btn {
-    background: white;
-    color: #0b0f19;
+
+.floating-card-top {
+
+    top: 55px;
+
+    right: -20px;
+
 }
 
-.primary-btn:hover {
-    transform: translateY(-3px);
+
+.floating-card-bottom {
+
+    bottom: 50px;
+
+    left: -25px;
+
 }
 
-.secondary-btn {
-    border: 1px solid #465066;
-    color: white;
+
+/* ========================================
+   SCROLL INDICATOR
+   ======================================== */
+
+.hero-scroll {
+
+    position: absolute;
+
+    z-index: 3;
+
+    bottom: 28px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #697386;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
 }
 
-.secondary-btn:hover {
-    background: #1b2233;
+
+.scroll-arrow {
+
+    font-size: 17px;
+
+    animation:
+        scrollBounce 1.8s
+        infinite;
+
 }
 
+
+@keyframes scrollBounce {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(5px);
+
+    }
+
+}
 
 /* ========================================
    AVATAR
