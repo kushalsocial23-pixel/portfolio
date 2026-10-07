@@ -17,31 +17,76 @@
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+   <!-- ================= NAVBAR ================= -->
 
-    <header class="navbar">
+<header class="navbar">
 
-       <div class="hero-avatar">
+    <div class="nav-container">
 
-    <img
-        src="profile.jpg"
-        alt="Kushal Kasera"
-        class="profile-photo"
-    >            </a>
+        <!-- Logo / Name -->
+        <a href="#home" class="nav-logo">
+            KK
+        </a>
 
-            <nav>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#certifications">Certifications</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certificates</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+
+        <!-- Right Side -->
+        <div class="nav-actions">
+
+            <!-- Theme Button -->
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                aria-label="Toggle theme">
+                ☼
+            </button>
+
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
 
         </div>
 
-    </header>
+    </div>
 
+
+    <!-- Mobile Navigation -->
+
+    <nav class="mobile-nav" id="mobile-nav">
+
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
 
     <!-- ================= HERO ================= -->
 
