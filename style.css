@@ -2195,3 +2195,551 @@ body.modal-open {
     }
 
 }
+/* ========================================
+   SECTION HEADING
+   ======================================== */
+
+.section-heading-row {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 55px;
+
+}
+
+
+.section-number {
+
+    color: #4e586b;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ========================================
+   ABOUT
+   ======================================== */
+
+.about-section {
+
+    background: #0b0f19;
+
+}
+
+
+.about-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.25fr)
+        minmax(300px, 0.75fr);
+
+    gap: 80px;
+
+    align-items: start;
+
+}
+
+
+.about-main {
+
+    max-width: 720px;
+
+}
+
+
+.about-main p {
+
+    margin-bottom: 22px;
+
+    color: #929cad;
+
+    font-size: 17px;
+
+    line-height: 1.85;
+
+}
+
+
+.about-main .about-lead {
+
+    margin-bottom: 28px;
+
+    color: #f1f3f6;
+
+    font-size: 25px;
+
+    line-height: 1.5;
+
+    letter-spacing: -0.5px;
+
+}
+
+
+/* ========================================
+   CURRENTLY CARD
+   ======================================== */
+
+.about-card {
+
+    padding: 25px;
+
+    border:
+        1px solid
+        #293246;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111827,
+            #0b0f19
+        );
+
+    box-shadow:
+        0 20px 50px
+        rgba(0,0,0,0.18);
+
+}
+
+
+.about-card-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+}
+
+
+.about-card-label {
+
+    color: #697386;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.about-card-icon {
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid
+        #303a4e;
+
+    border-radius: 9px;
+
+    color: #ffffff;
+
+}
+
+
+.about-current-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+}
+
+
+.about-current-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+}
+
+
+.current-dot {
+
+    width: 7px;
+    height: 7px;
+
+    flex-shrink: 0;
+
+    margin-top: 6px;
+
+    border-radius: 50%;
+
+    background: #8b95a8;
+
+}
+
+
+.about-current-item strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #e5e7eb;
+
+    font-size: 14px;
+
+}
+
+
+.about-current-item small {
+
+    display: block;
+
+    color: #697386;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+}
+
+
+/* ========================================
+   MODERN SKILLS
+   ======================================== */
+
+.skills-modern-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+
+}
+
+
+.skill-category {
+
+    position: relative;
+
+    min-height: 270px;
+
+    padding: 28px;
+
+    border:
+        1px solid
+        #293246;
+
+    border-radius: 18px;
+
+    background:
+        #0b0f19;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.skill-category:hover {
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        #536078;
+
+    background:
+        #0e1420;
+
+}
+
+
+.skill-category-featured {
+
+    background:
+        linear-gradient(
+            145deg,
+            #111827,
+            #0b0f19
+        );
+
+}
+
+
+.skill-category-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 45px;
+
+}
+
+
+.skill-index {
+
+    color: #596477;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.skill-arrow {
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid
+        #303a4e;
+
+    border-radius: 9px;
+
+    color: #7e899c;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+
+}
+
+
+.skill-category:hover
+.skill-arrow {
+
+    color: #ffffff;
+
+    transform:
+        translate(2px, -2px);
+
+}
+
+
+.skill-category h3 {
+
+    margin-bottom: 10px;
+
+    color: #f5f7fa;
+
+    font-size: 23px;
+
+    letter-spacing: -0.4px;
+
+}
+
+
+.skill-category > p {
+
+    max-width: 430px;
+
+    margin-bottom: 25px;
+
+    color: #7f899c;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+.skill-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+}
+
+
+.skill-list span {
+
+    padding:
+        7px 11px;
+
+    border:
+        1px solid
+        #30394c;
+
+    border-radius: 7px;
+
+    background:
+        rgba(255,255,255,0.025);
+
+    color: #c1c8d4;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+/* ========================================
+   SKILLS NOTE
+   ======================================== */
+
+.skills-note {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-top: 35px;
+
+}
+
+
+.skills-note span {
+
+    color: #7f899c;
+
+}
+
+
+.skills-note p {
+
+    color: #697386;
+
+    font-size: 12px;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* ========================================
+   ABOUT + SKILLS RESPONSIVE
+   ======================================== */
+
+@media (max-width: 850px) {
+
+    .about-layout {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+    .about-card {
+
+        max-width: 600px;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .section-heading-row {
+
+        margin-bottom: 38px;
+
+    }
+
+
+    .section-title {
+
+        font-size: 36px;
+
+    }
+
+
+    .about-main .about-lead {
+
+        font-size: 21px;
+
+    }
+
+
+    .about-main p {
+
+        font-size: 15px;
+
+    }
+
+
+    .skills-modern-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .skill-category {
+
+        min-height: auto;
+
+    }
+
+
+    .skill-category-header {
+
+        margin-bottom: 35px;
+
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .section-title {
+
+        font-size: 32px;
+
+    }
+
+}
