@@ -2743,3 +2743,298 @@ body.modal-open {
     }
 
 }
+/* ========================================
+   EDUCATION TIMELINE
+   ======================================== */
+
+.education-timeline {
+
+    position: relative;
+
+    max-width: 900px;
+
+    margin-left: 20px;
+
+}
+
+
+/* Vertical line */
+
+.education-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 6px;
+
+    top: 10px;
+
+    bottom: 10px;
+
+    width: 1px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #536078,
+            #293246,
+            transparent
+        );
+
+}
+
+
+.education-item {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        35px 1fr;
+
+    gap: 25px;
+
+    padding-bottom: 55px;
+
+}
+
+
+.education-item:last-child {
+
+    padding-bottom: 0;
+
+}
+
+
+/* Timeline dot */
+
+.education-marker {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 13px;
+    height: 13px;
+
+    margin-top: 7px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid
+        #65718a;
+
+    border-radius: 50%;
+
+    background: #0b0f19;
+
+}
+
+
+.education-marker span {
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #aeb7c7;
+
+}
+
+
+/* Education content */
+
+.education-content {
+
+    padding:
+        28px 30px;
+
+    border:
+        1px solid
+        #293246;
+
+    border-radius: 16px;
+
+    background:
+        rgba(255,255,255,0.015);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.education-content:hover {
+
+    transform:
+        translateX(5px);
+
+    border-color:
+        #536078;
+
+    background:
+        rgba(255,255,255,0.025);
+
+}
+
+
+/* Top row */
+
+.education-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.education-year {
+
+    margin: 0;
+
+    color: #697386;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.education-tag,
+.education-score {
+
+    padding:
+        6px 10px;
+
+    border:
+        1px solid
+        #303a4e;
+
+    border-radius: 7px;
+
+    color: #b8c0ce;
+
+    background:
+        rgba(255,255,255,0.03);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.education-content h3 {
+
+    margin-bottom: 8px;
+
+    color: #f5f7fa;
+
+    font-size: 22px;
+
+    letter-spacing: -0.3px;
+
+}
+
+
+.education-institution {
+
+    margin-bottom: 12px;
+
+    color: #c1c8d4;
+
+    font-size: 14px;
+
+}
+
+
+.education-description {
+
+    margin: 0;
+
+    color: #737e91;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ========================================
+   EDUCATION MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .education-timeline {
+
+        margin-left: 4px;
+
+    }
+
+
+    .education-item {
+
+        grid-template-columns:
+            25px 1fr;
+
+        gap: 15px;
+
+        padding-bottom: 35px;
+
+    }
+
+
+    .education-content {
+
+        padding:
+            22px 20px;
+
+    }
+
+
+    .education-content h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .education-top {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .education-year {
+
+        font-size: 10px;
+
+    }
+
+}
