@@ -3311,3 +3311,812 @@ body.modal-open {
     }
 
 }
+/* ========================================
+   PROJECTS
+   ======================================== */
+
+.projects-section {
+    overflow: hidden;
+}
+
+
+.projects-intro {
+    max-width: 650px;
+    margin-top: 18px;
+
+    color: #7f899c;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   PROJECT GRID
+   ======================================== */
+
+.projects-modern-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+}
+
+
+/* ========================================
+   FEATURED PROJECT
+   ======================================== */
+
+.project-featured {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 650px;
+
+    overflow: hidden;
+
+    border:
+        1px solid #293246;
+
+    border-radius: 20px;
+
+    background: #0b0f19;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+.project-featured:hover {
+
+    transform: translateY(-7px);
+
+    border-color: #536078;
+
+}
+
+
+/* ========================================
+   PROJECT VISUAL
+   ======================================== */
+
+.project-visual {
+
+    position: relative;
+
+    height: 300px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255,255,255,0.08),
+            transparent 65%
+        );
+
+    border-bottom:
+        1px solid #293246;
+
+}
+
+
+/* ========================================
+   BROWSER MOCKUP
+   ======================================== */
+
+.project-browser {
+
+    width: 76%;
+
+    max-width: 430px;
+
+    border:
+        1px solid #3b4558;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background: #101522;
+
+    box-shadow:
+        0 25px 60px
+        rgba(0,0,0,0.4);
+
+    transform:
+        perspective(800px)
+        rotateX(4deg)
+        rotateY(-5deg);
+
+    transition:
+        transform 0.4s ease;
+
+}
+
+
+.project-featured:hover
+.project-browser {
+
+    transform:
+        perspective(800px)
+        rotateX(1deg)
+        rotateY(0deg)
+        translateY(-5px);
+
+}
+
+
+.browser-top {
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 0 12px;
+
+    border-bottom:
+        1px solid #293246;
+
+    background: #151b29;
+
+}
+
+
+.browser-top > span {
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #697386;
+
+}
+
+
+.browser-top small {
+
+    margin-left: 10px;
+
+    color: #697386;
+
+    font-size: 8px;
+
+}
+
+
+.browser-content {
+
+    height: 210px;
+
+    padding: 25px;
+
+}
+
+
+.mock-logo {
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    border:
+        1px solid #65718a;
+
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+}
+
+
+.mock-line {
+
+    width: 55%;
+
+    height: 6px;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+
+    background: #394358;
+
+}
+
+
+.mock-line.large {
+
+    width: 75%;
+
+    height: 10px;
+
+    background: #65718a;
+
+}
+
+
+.mock-cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+}
+
+
+.mock-cards span {
+
+    height: 55px;
+
+    border:
+        1px solid #293246;
+
+    border-radius: 6px;
+
+    background: #151b29;
+
+}
+
+
+/* ========================================
+   PROJECT INFO
+   ======================================== */
+
+.project-info {
+
+    flex: 1;
+
+    padding: 28px;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.project-info-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 28px;
+
+}
+
+
+.project-number {
+
+    color: #596477;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.project-type {
+
+    color: #697386;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.project-info h3 {
+
+    margin-bottom: 13px;
+
+    color: #f5f7fa;
+
+    font-size: 25px;
+
+    letter-spacing: -0.5px;
+
+}
+
+
+.project-info > p {
+
+    margin-bottom: 22px;
+
+    color: #7f899c;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+.project-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: auto;
+
+}
+
+
+.project-tags span {
+
+    padding:
+        6px 9px;
+
+    border:
+        1px solid #303a4e;
+
+    border-radius: 6px;
+
+    background:
+        rgba(255,255,255,0.025);
+
+    color: #aeb7c7;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+}
+
+
+/* ========================================
+   PROJECT LINKS
+   ======================================== */
+
+.project-links {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid #202637;
+
+}
+
+
+.project-links a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding:
+        9px 12px;
+
+    border:
+        1px solid #354055;
+
+    border-radius: 8px;
+
+    color: #d4d9e2;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+.project-links a:hover {
+
+    transform: translateY(-2px);
+
+    background:
+        rgba(255,255,255,0.07);
+
+}
+
+
+.project-links a span {
+
+    font-size: 14px;
+
+}
+
+
+/* ========================================
+   AI PROJECT VISUAL
+   ======================================== */
+
+.ai-visual {
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(100,116,139,0.12),
+            transparent 60%
+        );
+
+}
+
+
+.ai-core {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid #65718a;
+
+    border-radius: 50%;
+
+    background:
+        #101522;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 0 40px
+        rgba(148,163,184,0.12);
+
+}
+
+
+.ai-orbit {
+
+    position: absolute;
+
+    border:
+        1px solid
+        rgba(148,163,184,0.18);
+
+    border-radius: 50%;
+
+}
+
+
+.orbit-one {
+
+    width: 180px;
+    height: 180px;
+
+    transform:
+        rotate(30deg);
+
+}
+
+
+.orbit-two {
+
+    width: 270px;
+    height: 120px;
+
+    transform:
+        rotate(-25deg);
+
+}
+
+
+.ai-node {
+
+    position: absolute;
+
+    z-index: 4;
+
+    padding:
+        7px 9px;
+
+    border:
+        1px solid #354055;
+
+    border-radius: 6px;
+
+    background:
+        #151b29;
+
+    color: #aeb7c7;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+.node-one {
+
+    top: 65px;
+
+    right: 22%;
+
+}
+
+
+.node-two {
+
+    bottom: 55px;
+
+    left: 18%;
+
+}
+
+
+.node-three {
+
+    bottom: 65px;
+
+    right: 18%;
+
+}
+
+
+/* ========================================
+   COMING SOON
+   ======================================== */
+
+.project-coming {
+
+    grid-column:
+        1 / -1;
+
+    min-height: 190px;
+
+    display: grid;
+
+    grid-template-columns:
+        70px 1fr 50px;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding:
+        30px;
+
+    border:
+        1px dashed #354055;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,0.015);
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.project-coming:hover {
+
+    border-color:
+        #596477;
+
+    background:
+        rgba(255,255,255,0.025);
+
+}
+
+
+.coming-number {
+
+    color: #3f495c;
+
+    font-size: 35px;
+
+    font-weight: 800;
+
+}
+
+
+.project-coming h3 {
+
+    margin:
+        8px 0 8px;
+
+    color: #d9dde5;
+
+    font-size: 21px;
+
+}
+
+
+.project-coming p {
+
+    max-width: 650px;
+
+    color: #697386;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+.coming-arrow {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid #303a4e;
+
+    border-radius: 50%;
+
+    color: #697386;
+
+    font-size: 20px;
+
+}
+
+
+/* ========================================
+   PROJECT MOBILE
+   ======================================== */
+
+@media (max-width: 800px) {
+
+    .projects-modern-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .project-featured {
+
+        min-height: 0;
+
+    }
+
+
+    .project-visual {
+
+        height: 270px;
+
+    }
+
+
+    .project-coming {
+
+        grid-template-columns:
+            50px 1fr;
+
+    }
+
+
+    .coming-arrow {
+
+        display: none;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .project-visual {
+
+        height: 230px;
+
+    }
+
+
+    .project-browser {
+
+        width: 84%;
+
+    }
+
+
+    .project-info {
+
+        padding: 23px;
+
+    }
+
+
+    .project-info h3 {
+
+        font-size: 21px;
+
+    }
+
+
+    .project-coming {
+
+        padding: 23px;
+
+        grid-template-columns:
+            1fr;
+
+        gap: 12px;
+
+    }
+
+
+    .coming-number {
+
+        font-size: 25px;
+
+    }
+
+}
